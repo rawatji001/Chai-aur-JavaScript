@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#ccc] flex justify-center">
+    <div
+      id="wrapper"
+      class="text-center bg-slate-800 text-white p-[20px] mt-[20px]"
+    >
+      <h1 class="bg-[black] text-[white] text-3xl p-[10px] rounded-[4px]">
+        Number Guessing Game
+      </h1>
+      <p class="py-[10px]">Try and guess a random number between 1 and 100.</p>
+      <p>You have 10 attempts to guess the right number.</p>
+      <br />
+      <form
+        action=""
+        class="form flex flex-col gap-[20px] bg-[gray] p-[10px] rounded-[4px]"
+      >
+        <label for="guessField" class="guess text-xl font-bold"
+          >Guess a Number</label
+        >
+        <input
+          type="text"
+          id="guessField"
+          class="guessField border-2 border-[black] pl-[10px] mx-auto w-[140px] text-[black]"
+        />
+        <input
+          type="submit"
+          id="subt"
+          value="Submit guess"
+          class="guessSubmit bg-[black] mx-auto text-[white] p-[5px_10px] rounded-[4px] cursor-pointer"
+        />
+      </form>
+
+      <div class="resultParas">
+        <p class="py-[10px]">
+          Previous Guesses : <span class="guesses"></span>
+        </p>
+
+        <p>Remaining Guesses : <span class="lastResult">10</span></p>
+        <p class="lowOrHigh"></p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

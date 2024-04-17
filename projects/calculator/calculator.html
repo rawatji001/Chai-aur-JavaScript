@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./calculator.css" />
+  </head>
+
+  <body>
+    <div id="calculator">
+      <input type="text" id="display" readonly />
+      <div class="btn_container">
+        <!--! C start  -->
+
+        <button
+          class="btn"
+          onclick="currentDisplay = '';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          C
+        </button>
+        <!--! C end  -->
+
+        <!-- ------------------- -->
+
+        <!--! 1 start  -->
+        <button
+          class="btn"
+          onclick="currentDisplay += '1';
+            document.querySelector('#display').value = currentDisplay;"
+        >
+          1
+        </button>
+        <!--! 1 end  -->
+
+        <!-- --------------------- -->
+
+        <!--! 2 start  -->
+        <button
+          class="btn"
+          onclick="currentDisplay += '2';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          2
+        </button>
+      </div>
+      <!--! 2 end  -->
+
+      <!-- ------------------------------------ -->
+
+      <!--! + start  -->
+
+      <div class="btn_container">
+        <button
+          class="btn"
+          onclick="currentDisplay += '+';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          +
+        </button>
+
+        <!--! + end  -->
+
+        <!-- ------------------------------------ -->
+
+        <!--! 3 start  -->
+
+        <button
+          class="btn"
+          onclick="currentDisplay += '3';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          3
+        </button>
+
+        <!--! 3 end  -->
+
+        <!-- ------------------------------------ -->
+
+        <!--! 3 start  -->
+        <button
+          class="btn"
+          onclick="currentDisplay += '4';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          4
+        </button>
+      </div>
+
+      <!--! 4 end  -->
+
+      <!-- ------------------------------------ -->
+
+      <!--! - start  -->
+
+      <div class="btn_container">
+        <button
+          class="btn"
+          onclick="currentDisplay += '-';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          -
+        </button>
+
+        <!--! - end  -->
+
+        <!-- ------------------------------------ -->
+
+        <!--! 5 start  -->
+
+        <button
+          class="btn"
+          onclick="currentDisplay += '5';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          5
+        </button>
+
+        <!--! 5 end  -->
+
+        <!-- ------------------------------------ -->
+
+        <!--! 6 start  -->
+
+        <button
+          class="btn"
+          onclick="currentDisplay += '6';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          6
+        </button>
+      </div>
+
+      <!--! 6 end  -->
+
+      <!-- ------------------------------------ -->
+
+      <!--! * start  -->
+
+      <div class="btn_container">
+        <button
+          class="btn"
+          onclick="currentDisplay += '*';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          *
+        </button>
+
+        <!--! * end  -->
+
+        <!-- ------------------------------------ -->
+
+        <!--! 7 start  -->
+
+        <button
+          class="btn"
+          onclick="currentDisplay += '7';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          7
+        </button>
+
+        <!--! 7 end  -->
+
+        <!-- ------------------------------------ -->
+
+        <!--! 8 start  -->
+
+        <button
+          class="btn"
+          onclick="currentDisplay += '8';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          8
+        </button>
+      </div>
+
+      <!--! 8 end  -->
+
+      <!-- ------------------------------------ -->
+
+      <!--! / start  -->
+
+      <div class="btn_container">
+        <button
+          class="btn"
+          onclick="currentDisplay += '/';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          /
+        </button>
+
+        <!--! / end  -->
+
+        <!-- ------------------------------------ -->
+
+        <!--! = start  -->
+
+        <button
+          class="btn"
+          onclick="currentDisplay = eval(currentDisplay);
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          =
+        </button>
+
+        <!--! = end  -->
+
+        <!-- ------------------------------------ -->
+
+        <!--! 9 start  -->
+
+        <button
+          class="btn"
+          onclick="currentDisplay += '9';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          9
+        </button>
+      </div>
+
+      <!--! 9 end  -->
+
+      <!-- ------------------------------------ -->
+
+      <!--! 0 start  -->
+
+      <div class="btn_container">
+        <button
+          class="btn"
+          onclick="currentDisplay += '0';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          0
+        </button>
+
+        <!--! 0 end  -->
+
+        <!-- ------------------------------------ -->
+
+        <!--! . start  -->
+
+        <button
+          class="btn"
+          onclick="currentDisplay += '.';
+        document.querySelector('#display').value = currentDisplay;"
+        >
+          .
+        </button>
+      </div>
+
+      <!--! . end  -->
+
+      <!-- ------------------------------------ -->
+    </div>
+
+    <script src="./calculator.js"></script>
+  </body>
+</html>
